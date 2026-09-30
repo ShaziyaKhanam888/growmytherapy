@@ -6,7 +6,7 @@ A high-performance, responsive single-page website built for **Dr. Maya Reynolds
 
 ## 🚀 Live Demo & Repository
 
-- **Live Deployment:**  
+- **Live Deployment:**  https://growmytherapy-profile.netlify.app/
 - **GitHub Repository:**  
 - **Video Walkthrough:**  
 
