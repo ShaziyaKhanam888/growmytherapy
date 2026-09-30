@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# GrowMyTherapy - Single-Page Therapist Website Submission
 
-## Getting Started
+A high-performance, responsive single-page website built for **Dr. Maya Reynolds, PsyD**, a licensed clinical psychologist based in Santa Monica, CA. This project was developed as part of the recruitment process for GrowMyTherapy, cloning and adapting the layout structure of Conejo Valley Family Counseling while applying custom branding, local SEO copywriting, and custom UI sections.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Live Demo & Repository
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Live Deployment:**  
+- **GitHub Repository:**  
+- **Video Walkthrough:**  
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack & Tools
 
-## Learn More
+- **Framework:** Next.js (App Router)
+- **Language:** JavaScript (ES6+)
+- **Styling:** Tailwind CSS (v4)
+- **Deployment:** Netlify
+- **Icons:** Custom SVG Components
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ Features & Requirements Fulfilled
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 1. Structure & Layout Clone (Part 1)
+- Recreated the exact structure, vertical proportions, and desktop/mobile container layout from the template reference.
+- **Hero Section Image Handling:** Optimized for both desktop and mobile views. Uses a framed container on desktop and dynamic scaling (`h-auto` with `object-top`) on mobile to ensure Dr. Maya's photo renders fully without clipping.
 
-## Deploy on Vercel
+### 2. Custom Color Theme (Part 2)
+Developed a distinct, accessible color palette tailored for a modern therapy practice:
+- **Deep Navy Blue (`#0F172A`):** Used for primary headings, branding, and footer elements.
+- **Soft Slate Grey (`#475569`):** Applied to body copy and secondary metadata for clean contrast.
+- **Vibrant Coral (`#FF6B57`):** Accent color for primary CTAs, link hovers, badge tags, and icons.
+- **Soft Cool Background (`#F4F6F8`):** Off-white canvas providing warm visual comfort.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 3. Copywriting & Local SEO Optimization (Part 2)
+- Tailored for **Dr. Maya Reynolds, PsyD** in **Santa Monica, CA**.
+- Integrated specialized SEO keywords and targeted services:
+  1. *Anxiety & Burnout Therapy in Santa Monica*
+  2. *Trauma & EMDR Therapy in Santa Monica*
+  3. *Therapy for High-Achievers & Perfectionism*
+- Integrated core modalities including Cognitive Behavioral Therapy (CBT), EMDR, and mindfulness techniques.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 4. Custom "Our Office" Section (Part 3)
+- Built a dedicated `#office` section highlighting her physical therapy environment at *123th Street 45 W, Santa Monica, CA*.
+- Displays high-resolution office space images (`office1.jpeg` and `office2.jpeg`) in a responsive grid layout.
+
+---
+
+## 📁 Project Folder Structure
+
+```text
+growmytherapy/
+├── app/
+│   ├── globals.css      # Custom Tailwind CSS theme variables
+│   ├── layout.js        # Root metadata & font setup
+│   └── page.js          # Single-page layout assembly
+├── components/
+│   ├── Navbar.jsx       # Header & navigation links
+│   ├── Hero.jsx         # Hero section & profile image container
+│   ├── Intro.jsx        # Quote block & practitioner background
+│   ├── WhoWeHelp.jsx    # 3 Specialized SEO service cards
+│   ├── Office.jsx       # Custom Part 3 Santa Monica office showcase
+│   ├── Icons.jsx        # SVGs for therapy modalities
+│   └── Footer.jsx       # Practice info, CTA & copyright
+└── public/
+    └── images/          # Assets (Dr. Maya's profile photo & office images)
