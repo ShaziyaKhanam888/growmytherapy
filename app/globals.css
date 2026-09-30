@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #f4f6f8; /* Soft Cool Ice / Light Slate Background */
+  --color-brand-primary: #0f172a; /* Deep Navy Blue for Main Headings & Footer */
+  --color-brand-secondary: #475569; /* Soft Slate Grey for Body Text & Subtitles */
+  --color-brand-accent: #ff6b57; /* Vibrant Coral for Buttons, Hover Links & Highlights */
+  --color-brand-card: #ffffff; /* Pure White for Content Cards */
+  --color-brand-text: #1e293b; /* Dark Slate Charcoal for High Readability Text */
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-text);
+  font-family: var(--font-sans);
+}
